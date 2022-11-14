@@ -15,20 +15,24 @@
     <!-- starting of the navbar  -->
     <div class="max-w-[99.5vw] mx-auto p-4 py-3">
       <div class="flex gap-5 justify-end items-center">
-        <ul class="flex gap-3 text-[0.82rem] text-[#212121] font-normal">
+        <ul class="flex gap-3 text-[0.8125rem] text-grey-300 font-normal">
           <li class="hover:underline hover:cursor-pointer">Gmail</li>
           <li class="hover:underline hover:cursor-pointer">Images</li>
         </ul>
-        <div class="flex gap-5 items-center ml-2">
-          <div class="w-[24px]">
-            <svg focusable="false" viewBox="0 0 24 24">
+        <div class="flex gap-3 items-center ml-2">
+          <div class="hover:bg-grey-100 p-2 rounded-full cursor-pointer">
+            <svg
+              class="w-[1.5rem] fill-grey-200"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
               <path
                 d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
               ></path>
             </svg>
           </div>
           <button
-            class="bg-[#1a73e8] text-white text-[0.85rem] font-bold px-[1.55rem] py-[0.5rem] rounded-sm"
+            class="bg-cyanblue-200 text-white text-[0.85rem] font-bold px-[1.55rem] py-[0.5rem] rounded-sm"
           >
             Sign in
           </button>
@@ -41,9 +45,18 @@
     <div class="max-w-[48vw] mx-auto p-4 mt-[3.2rem]">
       <img class="flex mx-auto w-[17.3rem]" src="assets/logo.png" alt="" />
       <div
-        class="border-[1px] border-[#DFE1E5] flex items-center mt-[1.5rem] px-[0.8rem] py-[0.62rem] rounded-full hover:shadow-md"
+        class="border-[1px] border-greyblue-200 flex items-center mt-[1.5rem] px-[0.8rem] py-[0.62rem] rounded-full hover:shadow-md"
       >
-        <img class="w-5 mr-3" src="assets/search.svg" alt="" />
+        <svg
+          class="w-6 mr-3 fill-grey-50"
+          focusable="false"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          ></path>
+        </svg>
         <input type="text" class="w-full outline-none" />
         <div class="flex gap-4 mr-3">
           <img class="w-6" src="assets/mic.svg" alt="" />
@@ -51,19 +64,25 @@
         </div>
       </div>
       <div
-        class="text-[#3c4043] text-[0.86rem] mt-[1.85rem] flex gap-3 justify-center"
+        class="text-grey-250 text-[0.875rem] mt-[1.81rem] flex gap-3 justify-center"
       >
-        <button class="bg-[#F8F9FA] px-4 py-[0.5rem] rounded-sm">
+        <button
+          type="button"
+          class="bg-greyblue-150 w-[125px] h-[2.2rem] py-[0.2rem] rounded-sm hover:border hover:shadow-sm"
+        >
           Google Search
         </button>
-        <button class="bg-[#F8F9FA] px-4 py-[0.4rem]rounded-sm">
+        <button
+          type="button"
+          class="bg-greyblue-150 w-[135px] h-[2.2rem] py-[0.2rem] rounded-sm hover:border hover:shadow-sm"
+        >
           I'm Feeling Lucky
         </button>
       </div>
 
-      <div class="flex gap-2 justify-center mt-7 text-[0.78rem]">
-        <p>Google offered in:</p>
-        <ul class="flex gap-2 text-[#2215A4]">
+      <div class="flex gap-2 justify-center mt-[1.580rem] text-[0.8125rem]">
+        <p class="text-grey-200">Google offered in:</p>
+        <ul class="flex gap-2 text-cyanblue-300">
           <li class="cursor-pointer hover:underline">Français</li>
           <li class="cursor-pointer hover:underline">Kiswahili</li>
           <li class="cursor-pointer hover:underline">Ikinyarwanda</li>
@@ -72,13 +91,13 @@
     </div>
 
     <!-- starting of the footer  -->
-    <div class="w-[100vw] absolute bottom-0 bg-[#F2F2F2] text-[#70757A]">
+    <div class="w-[100vw] absolute bottom-0 bg-raven-100 text-raven-200">
       <div class="max-w-[97vw] mx-auto p-3">
-        <p>Rwanda</p>
+        <p class="text-[0.9375rem]">Rwanda</p>
       </div>
       <hr />
       <div
-        class="max-w-[97vw] mx-auto p-3 flex justify-between text-[0.82rem] cursor-pointer"
+        class="max-w-[97vw] mx-auto p-3 flex justify-between text-raven-200 text-[0.875rem] cursor-pointer"
       >
         <ul class="flex gap-8">
           <li class="cursor-pointer hover:underline">About</li>
