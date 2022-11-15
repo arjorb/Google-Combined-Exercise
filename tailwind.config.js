@@ -35,6 +35,17 @@ module.exports = {
       spacing: {
         '2md': '0.62rem',
       },
+      maxWidth: {
+        47: '47vw',
+        68: '68vw',
+        97: '97vw',
+        99: '99.5vw',
+      },
+      height: {
+        100: '100vh',
+        108: '108vh',
+        111: '111vh',
+      },
       borderRadius: {
         1: '0.25rem',
       },
