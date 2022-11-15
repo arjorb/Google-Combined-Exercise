@@ -12,16 +12,18 @@
     <title>Google</title>
   </head>
   <body>
-    <div class="flex flex-col h-[111vh] lg:h-[100vh] justify-between">
+    <div
+      class="flex flex-col h-[111vh] md:h-[108vh] lg:h-[100vh] justify-between"
+    >
       <div>
         <!-- starting of the navbar  -->
         <div class="max-w-[99.5vw] mx-auto p-4 py-3">
           <div class="flex justify-between lg:justify-end">
             <!-- right navigation  -->
-            <ul class="flex gap-4 items-center lg:hidden text-[0.8rem]">
+            <ul class="flex gap-4 items-center lg:hidden text-8">
               <li>
                 <svg
-                  style="fill: #70757a; width: 24px; height: 24px"
+                  class="fill-grey-200 w-6"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -40,16 +42,14 @@
             </ul>
             <!-- left navigation -->
             <div class="flex gap-5 lg:justify-end items-center">
-              <ul
-                class="hidden lg:flex gap-3 text-[0.8125rem] text-grey-300 font-normal"
-              >
+              <ul class="hidden lg:flex gap-3 text-8 text-grey-300 font-normal">
                 <li class="hover:underline hover:cursor-pointer">Gmail</li>
                 <li class="hover:underline hover:cursor-pointer">Images</li>
               </ul>
               <div class="flex gap-3 items-center ml-2">
                 <div class="hover:bg-grey-100 p-2 rounded-full cursor-pointer">
                   <svg
-                    class="w-[1.5rem] fill-grey-200"
+                    class="w-6 fill-grey-200"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -59,7 +59,7 @@
                   </svg>
                 </div>
                 <button
-                  class="bg-cyanblue-200 text-white text-[0.85rem] font-bold px-[1.55rem] py-[0.5rem] rounded-[0.25rem] hover:bg-cyan"
+                  class="bg-cyanblue-200 text-white text-8md font-bold px-6 py-2 rounded-1 hover:bg-cyan"
                 >
                   Sign in
                 </button>
@@ -70,14 +70,10 @@
 
         <!-- starting of the searching  -->
 
-        <div class="md:max-w-[58vw] lg:max-w-[48vw] mx-auto p-2 mt-[3.2rem]">
-          <img
-            class="flex mx-auto md:w-[17.3rem] w-[10rem]"
-            src="assets/logo.png"
-            alt=""
-          />
+        <div class="md:max-w-[68vw] lg:max-w-[47vw] mx-auto p-2 mt-14">
+          <img class="flex mx-auto md:w-64 w-40" src="assets/logo.png" alt="" />
           <div
-            class="border-[1px] border-greyblue-200 flex justify-between items-center mt-[1.5rem] px-[0.8rem] py-[0.5rem] md:py-[0.62rem] rounded-full hover:shadow-md"
+            class="border border-greyblue-200 flex justify-between items-center mt-6 px-4 py-2 md:py-2md rounded-full hover:shadow-md"
           >
             <div class="flex flex-1">
               <svg
@@ -90,31 +86,35 @@
                   d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
                 ></path>
               </svg>
-              <input type="text" class="w-[100%] outline-none" />
+              <input type="text" class="w-full outline-none" />
             </div>
             <div class="flex gap-4">
-              <img class="hidden md:block w-6" src="assets/mic.svg" alt="" />
-              <img class="w-6" src="assets/camera.svg" alt="" />
+              <img class="hidden lg:block w-6" src="assets/mic.svg" alt="" />
+              <img
+                class="w-6 md:hidden lg:block"
+                src="assets/camera.svg"
+                alt=""
+              />
             </div>
           </div>
           <div
-            class="hidden text-grey-250 text-[0.875rem] mt-[1.81rem] lg:flex gap-3 justify-center"
+            class="hidden text-grey-250 text-8md mt-7 lg:flex gap-3 justify-center"
           >
             <button
               type="button"
-              class="bg-greyblue-150 w-[125px] h-[2.2rem] py-[0.2rem] rounded-[0.25rem] hover:border hover:shadow-sm"
+              class="bg-greyblue-150 w-32 h-9 py-1 rounded-1 hover:border hover:shadow-sm"
             >
               Google Search
             </button>
             <button
               type="button"
-              class="bg-greyblue-150 w-[135px] h-[2.2rem] py-[0.2rem] rounded-sm hover:border hover:shadow-sm"
+              class="bg-greyblue-150 w-32 h-9 py-1 rounded-1 hover:border hover:shadow-sm"
             >
               I'm Feeling Lucky
             </button>
           </div>
 
-          <div class="flex gap-2 justify-center mt-[1.580rem] text-[0.8125rem]">
+          <div class="flex gap-2 justify-center mt-6 text-8">
             <p class="text-grey-200">Google offered in:</p>
             <ul class="flex gap-2 text-cyanblue-300">
               <li class="cursor-pointer hover:underline">Français</li>
@@ -127,11 +127,11 @@
       <!-- starting of the footer  -->
       <div class="bg-raven-100 text-raven-200">
         <div class="max-w-[97vw] mx-auto p-3">
-          <p class="text-[0.9375rem]">Rwanda</p>
+          <p class="text-9">Rwanda</p>
         </div>
         <hr />
         <div
-          class="hidden max-w-[97vw] mx-auto p-3 lg:flex justify-between text-raven-200 text-[0.875rem] cursor-pointer"
+          class="hidden max-w-[97vw] mx-auto p-3 lg:flex justify-between text-raven-200 text-8md cursor-pointer"
         >
           <ul class="flex gap-8">
             <li class="cursor-pointer hover:underline">About</li>
@@ -147,7 +147,7 @@
           </ul>
         </div>
         <!-- mobo footer -->
-        <div class="py-4 text-[0.7rem] mt-4 lg:hidden">
+        <div class="py-4 text-8 mt-4 lg:hidden">
           <hr />
           <ul class="flex justify-center gap-5 pt-3">
             <li>Dark theme:off</li>

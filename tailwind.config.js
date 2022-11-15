@@ -3,6 +3,22 @@ module.exports = {
   content: ['./*.{html,js}'],
   theme: {
     fontFamily: { sans: ['Arial'] },
+    fontSize: {
+      2: '0.25rem',
+      5: '0.5rem',
+      8: '0.8rem',
+      '8md': '0.85rem',
+      9: '0.9375rem',
+      10: '1rem',
+      15: '1.5rem',
+      20: '2rem',
+      25: '2.5rem',
+      30: '3rem',
+      40: '3.5rem',
+      50: '4rem',
+      60: '4.5rem',
+      70: '5rem',
+    },
     extend: {
       colors: {
         grey: {
@@ -15,6 +31,12 @@ module.exports = {
         cyanblue: { 300: '#2215A4', 200: '#1a73e8' },
         greyblue: { 200: '#dfe1e5', 150: '#F8F9FA' },
         raven: { 200: '#70757A', 100: '#F2F2F2' },
+      },
+      spacing: {
+        '2md': '0.62rem',
+      },
+      borderRadius: {
+        1: '0.25rem',
       },
     },
   },
