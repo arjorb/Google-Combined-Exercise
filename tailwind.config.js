@@ -8,7 +8,6 @@ module.exports = {
       5: '0.5rem',
       7: '0.75rem',
       8: '0.8rem',
-      8.5: '0.85rem',
       9: '0.9375rem',
       10: '1rem',
       15: '1.5rem',
@@ -32,9 +31,6 @@ module.exports = {
         cyanblue: { 300: '#2215A4', 200: '#1a73e8' },
         greyblue: { 200: '#dfe1e5', 150: '#F8F9FA' },
         raven: { 200: '#70757A', 100: '#F2F2F2' },
-      },
-      spacing: {
-        2.5: '0.62rem',
       },
       maxWidth: {
         47: '47vw',
