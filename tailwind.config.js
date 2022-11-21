@@ -8,7 +8,7 @@ module.exports = {
       5: '0.5rem',
       7: '0.75rem',
       8: '0.8rem',
-      '8md': '0.85rem',
+      8.5: '0.85rem',
       9: '0.9375rem',
       10: '1rem',
       15: '1.5rem',
@@ -34,7 +34,7 @@ module.exports = {
         raven: { 200: '#70757A', 100: '#F2F2F2' },
       },
       spacing: {
-        '2md': '0.62rem',
+        2.5: '0.62rem',
       },
       maxWidth: {
         47: '47vw',
