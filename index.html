@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.google.com/favicon.ico"
+    />
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>Google</title>
+  </head>
+  <body>
+    <div class="flex flex-col h-111 md:h-108 lg:h-100 justify-between">
+      <div>
+        <!-- starting of the navbar  -->
+        <div class="max-w-5.5xl mx-auto p-4 py-2">
+          <div class="flex justify-between lg:justify-end">
+            <!-- right navigation  -->
+            <ul class="flex gap-4 items-center lg:hidden text-7">
+              <img class="w-6" src="assets/menu.svg" alt="" />
+
+              <li
+                class="text-cyanblue-200 border-b-2 border-cyanblue-200 py-2 px-2 hover:cursor-pointer"
+              >
+                ALL
+              </li>
+              <li class="hover:cursor-pointer">IMAGES</li>
+            </ul>
+            <!-- left navigation -->
+            <div class="flex gap-5 lg:justify-end items-center">
+              <ul class="hidden lg:flex gap-3 text-7 text-grey-300 font-normal">
+                <li class="hover:underline hover:cursor-pointer">Gmail</li>
+                <li class="hover:underline hover:cursor-pointer">Images</li>
+              </ul>
+              <div class="flex gap-3 items-center ml-2">
+                <div class="hover:bg-grey-100 p-2 rounded-full cursor-pointer">
+                  <img class="w-6" src="assets/app.svg" alt="" />
+                </div>
+                <button
+                  class="bg-cyanblue-200 text-white text-8 font-bold px-3 py-2 rounded-1 hover:bg-cyan"
+                >
+                  Sign in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- starting of the searching  -->
+
+        <div class="md:max-w-68 lg:max-w-47 mx-auto p-2 mt-14">
+          <img class="flex mx-auto md:w-64 w-40" src="assets/logo.png" alt="" />
+          <div
+            class="border border-greyblue-200 flex justify-between items-center mt-6 px-4 py-2 md:py-2 rounded-full hover:shadow-md"
+          >
+            <div class="flex flex-1">
+              <img class="w-6 mr-3" src="assets/search.svg" alt="" />
+              <input type="text" class="w-full outline-none" />
+            </div>
+            <div class="flex gap-4">
+              <img class="hidden lg:block w-6" src="assets/mic.svg" alt="" />
+              <img
+                class="w-6 md:hidden lg:block"
+                src="assets/camera.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="hidden text-grey-250 text-8 mt-7 lg:flex gap-3 justify-center"
+          >
+            <button
+              type="button"
+              class="bg-greyblue-150 w-32 h-9 py-1 rounded-1 hover:border hover:shadow-sm"
+            >
+              Google Search
+            </button>
+            <button
+              type="button"
+              class="bg-greyblue-150 w-32 h-9 py-1 rounded-1 hover:border hover:shadow-sm"
+            >
+              I'm Feeling Lucky
+            </button>
+          </div>
+
+          <div class="flex gap-2 justify-center mt-6 text-8">
+            <p class="text-grey-200">Google offered in:</p>
+            <ul class="flex gap-2 text-cyanblue-300">
+              <li class="cursor-pointer hover:underline">Français</li>
+              <li class="cursor-pointer hover:underline">Kiswahili</li>
+              <li class="cursor-pointer hover:underline">Ikinyarwanda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- starting of the footer  -->
+      <div class="bg-raven-100 text-raven-200">
+        <div class="max-w-97 mx-auto p-3">
+          <p class="text-9">Rwanda</p>
+        </div>
+        <hr />
+        <div
+          class="hidden max-w-97 mx-auto p-3 lg:flex justify-between text-raven-200 text-8 cursor-pointer"
+        >
+          <ul class="flex gap-8">
+            <li class="cursor-pointer hover:underline">About</li>
+            <li class="cursor-pointer hover:underline">Advertising</li>
+            <li class="cursor-pointer hover:underline">Business</li>
+            <li class="cursor-pointer hover:underline">How Search works</li>
+          </ul>
+
+          <ul class="flex gap-8">
+            <li class="cursor-pointer hover:underline">Privacy</li>
+            <li class="cursor-pointer hover:underline">Terms</li>
+            <li class="cursor-pointer hover:underline">Settings</li>
+          </ul>
+        </div>
+        <!-- mobo footer -->
+        <div class="py-4 text-8 mt-4 lg:hidden">
+          <hr />
+          <ul class="flex justify-center gap-5 pt-3">
+            <li>Dark theme:off</li>
+            <li>Settings</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+          </ul>
+
+          <ul class="mt-2 flex justify-center gap-5">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
